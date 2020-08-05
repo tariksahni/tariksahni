@@ -1,0 +1,17 @@
+name: Update my coding stats graph
+
+on:
+  schedule:
+    cron: '0 12 * * *'
+
+jobs:
+  update-Readme:
+    name: Update my Coding Graph in README
+    runs-on: ubuntu-latest
+    steps:
+      - uses: 'MY ACTION HERE'
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+
+
+
