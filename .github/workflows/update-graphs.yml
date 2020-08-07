@@ -9,8 +9,8 @@ jobs:
     name: Update my Coding Graph in README
     runs-on: ubuntu-latest
     steps:
-      - uses: 'MY ACTION HERE'
-        with:
+      - uses: tariksahni/coding-stats-wakatime@v0.0.4
+        env:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
 
 
