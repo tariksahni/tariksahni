@@ -6,17 +6,15 @@ name: Update my coding stats graph
 
 on: [push]
 
-env:
-  WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-
 jobs:
   update-Readme:
     name: Update my Coding Graph in README
     runs-on: ubuntu-latest
     steps:
-      - uses: tariksahni/coding-stats-wakatime@v0.0.12
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+      - uses: tariksahni/coding-stats-wakatime@v0.0.13
+      with:
+        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+
 
 
 
