@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: tariksahni/coding-stats-wakatime@v0.0.13
-      with:
-        WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
 
 
 
