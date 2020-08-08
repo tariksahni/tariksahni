@@ -6,6 +6,9 @@ name: Update my coding stats graph
 
 on: [push]
 
+env:
+  WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+
 jobs:
   update-Readme:
     name: Update my Coding Graph in README
