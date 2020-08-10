@@ -14,10 +14,7 @@ jobs:
       - uses: tariksahni/coding-stats-wakatime@v0.0.20
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          CHECK: 'Hey'
-        env:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          CHECK123: 'Hey123'
+          REPO_TOKEN: ${{ github.token }}
 
 
 
