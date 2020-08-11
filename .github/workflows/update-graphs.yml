@@ -14,7 +14,8 @@ jobs:
       - uses: tariksahni/coding-stats-wakatime@v0.0.21
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          REPO_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_ACTION: ${{ github.action }}
 
 
 
